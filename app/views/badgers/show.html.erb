@@ -1,0 +1,14 @@
+<div>
+    <h1> HI! My name is <%= @badger.name %> </h1>
+    <h2> I'm from <%= @badger.hometown %> </h2>
+    <h2>AND IM READY FOR MY FOREVER HOME</h2>
+</div>
+
+<div>
+    <%= button_to "Join the Cohort and Adopt!", students_path, method: :get %>
+    <%= button_to "Back", badgers_path, method: :get %>
+</div>
+
+<div>
+    <div class="profile_container"><img src="<%= @badger.img_url %>" alt=" "></div>
+</div>

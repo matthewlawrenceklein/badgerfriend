@@ -1,0 +1,2 @@
+class Badger < ApplicationRecord
+end

@@ -1,0 +1,8 @@
+<h1>Available Badgers</h1>
+<br>
+
+<div class="container">
+    <% @available_badgers.each do |badger| %>
+        <div class="badger_container"> <%= link_to image_tag(badger.img_url), badger_path(badger) %> </div>
+    <% end %>
+</div>
