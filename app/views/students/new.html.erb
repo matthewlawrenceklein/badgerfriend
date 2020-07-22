@@ -1,4 +1,6 @@
-<h1>There are <%= @available_badgers.count %> badgers available now</h1>
+<div id="container">
+  <h1>There are <%= @available_badgers.count %> badgers available now</h1>
+</div>
 
 <% if @student.errors.any? %>
   <div id="error_explanation">
@@ -15,24 +17,23 @@
   </div>
 <% end %>
 
-<%= form_for @student  do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
+<div id="container">
+  <%= form_for @student  do |f| %>
+    <div class="form_div"><%= f.label :name %></div>
+    <div class="form_div"><%= f.text_field :name %></div>
+    <br>
+    <div class="form_div"><%= f.label :age %></div>
+    <div class="form_div"><%= f.number_field :age %></div>
+    <br>
+    <div class="form_div"><%= f.label :location %></div>
+    <div class="form_div"><%= f.text_field :location %></div>
+    <br>
+    <div class="form_div"><%= f.label 'Profile Pic' %></div>
+    <div class="form_div"><%= f.text_field :img_url %></div>
+    <br>
+    <div class="form_div"><%= f.collection_select :badger_id, @available_badgers, :id, :name %></div>
+    <br />
 
-  <%= f.label :age %>
-  <%= f.number_field :age %>
-
-  <%= f.label :location %>
-  <%= f.text_field :location %>
-
-  <%= f.label :img_url %>
-  <%= f.text_field :img_url %>
-
-  <%= f.collection_select :badger_id, @available_badgers, :id, :name %>
-  
-
-  
-  <br />
-
-  <%= f.submit %>
-<% end %>
+    <div class="form_div"><%= f.submit %></div>
+  <% end %>
+</div>

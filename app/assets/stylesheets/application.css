@@ -14,10 +14,27 @@
  *= require_self
  */
 
- #badger_container {
+ /* #badger_container {
 
     width: 20%;
     height: 20%;
- }
+ } */
 
- 
+* {
+   font-family: 'Lato', sans-serif;
+} 
+
+#container-2 {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin: 20px;
+}
+
+#title_img {
+   height: 500px;
+   width: 600px;
+   margin: 50px;
+}
+

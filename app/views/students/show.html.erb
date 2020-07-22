@@ -1,10 +1,13 @@
-<h1>Hey It's <%= @student.name %></h1>
-<div><%= button_to 'GO BACK', students_path, method: :get %></div>
-<ul>
-    <li> AGE: <%= @student.age %> </li>
-    <li> LOCATION: <%= @student.location %> </li>
-    <li> Badger: <%= @badger.name %> </li>
-</ul>
+<div id="container-2">
+    <h1>Hey It's <%= @student.name %></h1>
+    <div><%= button_to 'GO BACK', students_path, method: :get %></div>
+    <ul>
+        <li> AGE: <%= @student.age %> </li>
+        <li> LOCATION: <%= @student.location %> </li>
+        <li> Badger: <%= @badger.name %> </li>
+    </ul>
 
-<div class="profile_container"><img src="<%= @student.img_url %>" alt=" "></div>
-<div class="profile_container"><img src="<%= @badger.img_url %>" alt=" "></div>
+    <div class="profile_container"><img src="<%= @student.img_url %>" alt=" "></div>
+    <div class="profile_container"><img src="<%= @badger.img_url %>" alt=" "></div>
+
+</div>

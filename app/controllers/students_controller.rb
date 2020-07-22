@@ -1,6 +1,7 @@
 class StudentsController < ApplicationController
     def index
         @students = Student.all
+        @badgers = Badger.all 
     end
 
     def show

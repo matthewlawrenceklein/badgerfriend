@@ -4,12 +4,39 @@
     <title>BadgerFriend</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+  <style>
+    .header { 
+      background-color: #414770; 
+      color: #F46036;
+      height: 80px;
+      text-align: center;
+      }
+    .footer {
+      background-color: #414770; 
+      color: #F46036;
+      height: 50px;
+      bottom: 0;
+      text-align: center;
+    }
 
+
+
+
+  </style>
   <body>
+    <div class="header">
+      <h1 class="header">Badger Friend</h1>
+    </div>
+
     <%= yield %>
+
+    <div class="footer">
+      <h3 class="footer">Badger Friend COPYRIGHT FOREVER</h3>
+    </div>
+
   </body>
 </html>
